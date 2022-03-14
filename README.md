@@ -24,7 +24,7 @@ The trained model is tested on the testing set. The inference process consists o
 The source files are cleaned to convert to lower case, remove words within parentheses, apostrophe ‘s, punctuation and stop words. Start and end tokens are added to signal the beginning and end of a sentence. 
 
 ## 4. EDA
-For the Amazon Fine Foods dataset, the 95th percentile of summary data contained word lengths of 8 words. So the maximum word length for the summaries was set to 8, and the maximum word length of the text was set at 30 words to reduce computational requrements. 
+For the Amazon Fine Foods dataset, the 95th percentile of summary data contained word lengths of 8 words. So the maximum word length for the summaries was set to 8, and the maximum word length of the text was set at 30 words to reduce computational requirements. 
 
 ![Word Lengths] (https://github.com/fl0c/Capstone-3/blob/65c2b1039bcab9a62e1039a1dfbf2a06acc4b513/eda.png)
 
