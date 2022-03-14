@@ -26,7 +26,7 @@ The source files are cleaned to convert to lower case, remove words within paren
 ## 4. EDA
 For the Amazon Fine Foods dataset, the 95th percentile of summary data contained word lengths of 8 words. So the maximum word length for the summaries was set to 8, and the maximum word length of the text was set at 30 words to reduce computational requrements. 
 
-![Word Lengths] https://github.com/fl0c/Capstone-3/blob/65c2b1039bcab9a62e1039a1dfbf2a06acc4b513/eda.png
+![Word Lengths] (https://github.com/fl0c/Capstone-3/blob/65c2b1039bcab9a62e1039a1dfbf2a06acc4b513/eda.png)
 
 Various maximum word length combinations for the text and summaries were explored for the BBC articles dataset. If articles of meaningful length were kept, the model training parameters ballooned very quickly. If the word lengths were reduced, the dataset size became very small. Due to computational limits, the model could not be trained on the BBC dataset.
 
@@ -40,6 +40,7 @@ The model was trained on a training size of 4,771 and remaining 10% was for test
 The model early stopping criteria was set at validation loss increases. This was reached at the 14th epoch with this dataset. 
 
 A sample of the output is shown below. Many outputs generated 'great' as the only summary.
+
 ![Sample Output](https://github.com/fl0c/Capstone-3/blob/ac65eccab32feb3e1f5059682fb0759e2c0aea09/sample%20output.jpg)
 
 Looking at the model metrics, the training set produced fairly low BLEU scores (precision) of 0.0151 and ROUGE-2 scores (recall) of 0.0197. The testing set BLEU score was 0.009 and ROUGE-2 score was 0.033. The ROUGE-1 F1 score was about 0.5, so the model is not much better than a 50-50 guess.
