@@ -46,12 +46,15 @@ A sample of the output is shown below. Many outputs generated 'great' as the onl
 Looking at the model metrics, the training set produced fairly low BLEU scores (precision) of 0.0151 and ROUGE-2 scores (recall) of 0.0197. The testing set BLEU score was 0.009 and ROUGE-2 score was 0.033. The ROUGE-1 F1 score was about 0.5, so the model is not much better than a 50-50 guess.
 
 ## Future Work
-1) Make it work on more complex datasets
+1) Train on more complex datasets
+
    By modifying Keras preprocessing tokenization filter, we can give unique tokens to      place names, figures and percentages. While this is useful, this increases the          vocabulary size of the model and number of trainable parameters. This also makes        generalization more difficult for summarization. This  attempt was excluded here due    to limited computation power. A cloud cluster method could be explored to handle        longer sentences and more complex tokens.
    
 2) Train on more data
    While this seems obvious, but due to the computational limits, the model can take        very long to compile in some tested cases.
 
-3) Bidirectional LSTM model to capture the context from both directions within a          sentence
+3) Hyperparameter Tuning
+
+5) Bidirectional LSTM model to capture the context from both directions within a          sentence
 
 4) Beam search decoder for the test sequence decoding instead of argmax
